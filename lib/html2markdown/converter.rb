@@ -71,7 +71,7 @@ module HTML2Markdown
       when 'a'
         result << "[#{contents}](#{node['href']})"
       else
-        result << contents unless contents == nil
+        result << " #{contents} "
       end
       result
     end
